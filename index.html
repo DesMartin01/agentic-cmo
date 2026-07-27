@@ -356,6 +356,27 @@
     line-height: 1.5;
   }
 
+  .cross-functional-list {
+    list-style: none;
+    margin: 24px 0;
+    max-width: 640px;
+  }
+
+  .cross-functional-list li {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--muted);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cross-functional-list li:last-child { border-bottom: none; }
+
+  .cross-functional-list li strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
   /* WHY IT WORKS */
   .benefit-grid {
     display: grid;
@@ -636,6 +657,18 @@
         <p>Every external-facing output has a human review step. The agent drafts. The human decides. Brand-sensitive decisions stay with people.</p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>Marketing doesn't operate in a vacuum. Neither do these agents.</h2>
+    <p>Every agent has defined handoff points with Legal, Finance, IT, and Sales. Not a black box. Dashboards, audit logs, escalation rules. Other departments see what the agent is doing.</p>
+    <ul class="cross-functional-list">
+      <li><strong>Legal:</strong> External content gets a review step. Agent drafts, legal reviews, agent revises.</li>
+      <li><strong>Finance:</strong> Spend threshold alerts on ad campaigns. No surprise budgets.</li>
+      <li><strong>IT:</strong> Agent works through staging. IT controls production. Security reviews scopes upfront.</li>
+      <li><strong>Sales:</strong> Lead quality scores visible to sales. Sales can challenge. Agent routes qualified leads with context.</li>
+    </ul>
+    <p>Humans stay in control. Every external-facing output has a human review step. The agent drafts. The human decides. Brand-sensitive decisions stay with people.</p>
   </section>
 
   <section class="start-section">
