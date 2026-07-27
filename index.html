@@ -143,6 +143,37 @@
     transform: translateY(-1px);
   }
 
+  .cta-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 18px 44px;
+    border: 1px solid var(--text);
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    min-height: 48px;
+    line-height: 1.2;
+    margin-left: 12px;
+  }
+
+  .cta-secondary:hover {
+    border-color: var(--highlight);
+    color: var(--highlight);
+    transform: translateY(-1px);
+  }
+
+  .executive-intent {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 32px;
+    font-weight: 400;
+  }
+
   /* COMPOSABLE ANIMATION */
   .diagram-section {
     padding: 24px 0 80px;
@@ -494,6 +525,7 @@
     .bullets li { font-size: 14px; padding: 12px 0 12px 24px; }
     .bullets li::before { top: 17px; width: 7px; height: 7px; }
     .cta { font-size: 14px; padding: 16px 36px; }
+    .cta-secondary { font-size: 14px; padding: 16px 36px; margin-left: 0; margin-top: 12px; }
     .diagram-section { padding: 16px 0 56px; }
     .diagram-stage { max-width: 340px; }
     :root { --rhythm: 64px; --block-w: 200px; }
@@ -524,13 +556,15 @@
   <div class="hero">
     <p class="hero-eyebrow">The Agentic CMO</p>
     <h1>HIRE THE AGENTIC CMO.<br>GET A <span class="highlight">MARKETING DEPARTMENT.</span></h1>
+    <p class="executive-intent">Available for CMO, fractional CMO, or contract roles. Remote, hybrid, or on-site.</p>
     <p class="explainer">A human core with decades of experience for strategy and judgment. A team of AI agents for production, scaling up and down as you need them.</p>
     <ul class="bullets">
-      <li>2-3x your marketing output at roughly half the cost.</li>
+      <li>2-3x your marketing output without growing headcount.</li>
       <li>Scale capacity up in 12 hours, down in a click.</li>
       <li>Start with one 30-day proof. No headcount changes.</li>
     </ul>
     <a href="#contact" class="cta">Book a call &rarr;</a>
+    <a href="https://www.linkedin.com/in/desmartin/" class="cta-secondary">LinkedIn Profile &rarr;</a>
   </div>
 </div>
 
@@ -572,7 +606,7 @@
   <section>
     <h2>Marketing AI platforms standardise. The composable approach crafts.</h2>
     <p>Every AI marketing platform gives you the same agents as your competitors. Okara. Bluefish. AdsGency. Same tools, same outputs, no edge.</p>
-    <p>The composable approach is different. Each agent is built for your specific company, your market, your growth stage. The right model for the task. The right tools. The right guardrails. Built deliberately, tested, and refined. AI slop is the enemy.</p>
+    <p>The composable approach is different. Each agent is built for your specific company, your market, your growth stage. The right model for the task. The right tools. The right guardrails. Built deliberately, tested, and refined. <span style="text-decoration: underline;">AI slop is the enemy.</span></p>
     <div class="craft-callout">
       <p>This is a craft, not a template. Each agent takes time to get right. That time is the difference between output that builds your brand and output that erodes it.</p>
     </div>
@@ -636,7 +670,8 @@
       </div>
       <div class="track-bio">
         <p>Early to online privacy, open source, web3, and Sovereign AI inference. This time I'm building the system, not just marketing it.</p>
-        <p class="muted sans" style="font-size: 15px;">Already running AI agents in production. Already onboarding non-technical users. Already seeing real results. Already co-hosting a podcast about building with AI. Deploying, not still exploring.</p>
+        <p class="muted sans" style="font-size: 15px;">Already running AI agents in production. Already onboarding non-technical users. Already seeing real results. Deploying, not still exploring.</p>
+        <p class="muted sans" style="font-size: 15px;">Co-hosting a podcast about building with AI.</p>
         <p class="muted sans" style="font-size: 15px;">Based in Wicklow, Ireland. Available for remote, hybrid, or on-site.</p>
       </div>
     </div>
@@ -671,7 +706,7 @@
       agents: ['SEO / GEO', 'Analytics', 'Campaigns', 'Lead Gen']
     },
     {
-      name: 'BRAND REFRESH',
+      name: 'CAMPAIGN ASSETS',
       agents: ['Video', 'Web', 'Design', 'Content']
     },
     {
