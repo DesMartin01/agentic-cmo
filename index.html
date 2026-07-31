@@ -41,6 +41,16 @@
 <!-- Theme Color -->
 <meta name="theme-color" content="#0a0a0a">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SV0HFNWP9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SV0HFNWP9Y');
+</script>
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -620,8 +630,8 @@
       <li>Scale capacity up in 12 hours, down in a click.</li>
       <li>Start with one 30-day proof. No headcount changes.</li>
     </ul>
-    <a href="mailto:dm@desmartin.io" class="cta">Book a call &rarr;</a>
-    <a href="https://www.linkedin.com/in/desmartin/" class="cta-secondary">LinkedIn Profile &rarr;</a>
+    <a href="mailto:dm@desmartin.io" class="cta" onclick="gtag('event', 'cta_click', { 'cta_name': 'book_a_call', 'cta_location': 'hero' });">Book a call &rarr;</a>
+    <a href="https://www.linkedin.com/in/desmartin/" class="cta-secondary" onclick="gtag('event', 'cta_click', { 'cta_name': 'linkedin_profile', 'cta_location': 'hero' });">LinkedIn Profile &rarr;</a>
   </div>
 </div>
 
@@ -713,7 +723,7 @@
     <p>If it works, we expand. If it doesn't, you've lost 30 days and some API credits.</p>
     <p>You see the agent's work and its self-assessment every week. Trust builds through evidence, not pitch decks.</p>
     <div class="cta-wrapper">
-      <a href="mailto:dm@desmartin.io" class="cta">Book a call &rarr;</a>
+      <a href="mailto:dm@desmartin.io" class="cta" onclick="gtag('event', 'cta_click', { 'cta_name': 'book_a_call', 'cta_location': 'start_section' });">Book a call &rarr;</a>
     </div>
   </section>
 </div>
